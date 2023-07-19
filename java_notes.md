@@ -1,9 +1,9 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
-![icons8-java-48](https://github.com/gergelygazso/codebricks/assets/66570469/a57457b5-e5a5-4b5a-8687-c0f93e48e97e)
-![icons8-spring-boot-48](https://github.com/gergelygazso/codebricks/assets/66570469/0bb4f3bb-a9ec-4c9d-a7c3-fa414a9dacc5)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gergelygazso/codebricks/main/images/codebricks-logo-temp.jpeg" />
+</p>
 
 
 <br>
