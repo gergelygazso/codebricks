@@ -38,10 +38,11 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 <p>So JPA provides some in-built stuff that is used by every kind of JPA implementations, hence if you change your ORM framework (let's say from Hibernate to EclipseLink) your code will not break. Hibernate specific functionality can be used only, if you are sure you don't want to replace it in the future.</p>
 
 ### Hibernate
-<p>Hibernate is an ORM framework, a JPA implementation. It uses JDBC to communicate with the Database. Before Hibernate, developers used JDBC directly to persist data, and mapped manually to the DTO objects. Hibernate maps the relational database table to a Java object. It provides HQL for writing queries using objects and properties instead of tables and columns.</p>
+<p>Hibernate is an ORM framework, a JPA implementation. Spring Boot uses Hibernate as the default JPA implementation. It uses JDBC to communicate with the Database. Before Hibernate, developers used JDBC directly to persist data, and mapped manually to the DTO objects. Hibernate maps the relational database table to a Java object. It provides HQL for writing queries using objects and properties instead of tables and columns.</p>
 
 <p>
   Hibernate supports writing native queries as well, but it's not recommended, because if you change the database behind your app, your query can break. But if you uses HQL instead, Hibernate will translate it to new Database syntax, after you configurated the new database dialect.
 </p>
+
 
 
