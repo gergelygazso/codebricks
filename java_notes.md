@@ -25,13 +25,10 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
   JPA stands for Java Persistence API. It's a specification to persist Java objects in relational Database. It cannot be used without an ORM implementation like Hibernate or EclipseLink. Hibernate is the de facto JPA     implementation standard.
 </p>
 <p>
-  java. persistence package provides:
+  java. persistence package includes the JPA classes and interfaces. It provides:
   <ul>
     <li>
-      JPA provides JPQL (Java Persistence Query Language). Hibernate's HQL is an extended version or a superset of JPQL. HQL is a query language that will be translated to plain SQL queries. It's syntax operates with objects and properties, instead of tables and columns. An example of HQL syntax:
-```java
-String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
-```
+      JPA provides JPQL (Java Persistence Query Language). Hibernate's HQL is an extended version or a superset of JPQL. HQL is a query language that will be translated to plain SQL queries. It's syntax operates with objects and properties, instead of tables and columns. An example of HQL syntax: String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC"
     </li>
     <li></li>
     <li></li>
