@@ -14,6 +14,10 @@
 
 <br>
 
+```java
+String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
+```
+
 # Spring
 ## Relationship between JPA, Hibernate and Spring Data JPA
 ### JPA and Hibernate
@@ -23,7 +27,12 @@
 <p>
   java. persistence package provides:
   <ul>
-    <li>JPA provides JPQL (Java Persistence Query Language). Hibernate's HQL is an extended version or a superset of JPQL. HQL is a query language that will be translated to plain SQL queries. It's syntax operates with objects and properties, instead of tables and columns. </li>
+    <li>
+      JPA provides JPQL (Java Persistence Query Language). Hibernate's HQL is an extended version or a superset of JPQL. HQL is a query language that will be translated to plain SQL queries. It's syntax operates with objects and properties, instead of tables and columns. An example of HQL syntax:
+```java
+String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
+```
+    </li>
     <li></li>
     <li></li>
   </ul>
