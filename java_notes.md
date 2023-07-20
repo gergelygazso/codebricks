@@ -41,7 +41,7 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 <p>Hibernate is an ORM framework, a JPA implementation. It uses JDBC to communicate with the Database. Before Hibernate, developers used JDBC directly to persist data, and mapped manually to the DTO objects. Hibernate maps the relational database table to a Java object. It provides HQL for writing queries using objects and properties instead of tables and columns.</p>
 
 <p>
-  Hibernate supports writing native queries as well. 
+  Hibernate supports writing native queries as well, but it's not recommended, because if you change the database behind your app, your query can break. But if you uses HQL instead, Hibernate will translate it to new Database syntax, after you configurated the new database dialect.
 </p>
 
 
