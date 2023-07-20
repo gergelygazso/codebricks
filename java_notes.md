@@ -1,24 +1,17 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
-<p style="text-align: center;">
-  <h1>codebricks notes<h1>
-</p>
-
 <p align="center">
-  <img src="images/codebricks-logo-temp.jpeg" width="10%" height="auto"/>
+  <img src="images/codebricks-logo-2in1.jpeg" width="50%" height="auto"/>
 </p>
-
 
 <br>
-<!-- related technologies icons -->
+
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
-  </a>
+  <img src="images/icons8-java-48.png" width="48" height="48"/>
+  <img src="images/icons8-spring-boot-48.png" width="48" height="48"/>
 </p>
 
-<a href="https://github.com/othneildrew/Best-README-Template/tree/master">README template used</a>
 <br>
 
 ## Java
