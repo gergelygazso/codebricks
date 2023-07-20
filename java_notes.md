@@ -20,7 +20,7 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 
 # Spring
 ## Relationship between JPA, Hibernate and Spring Data JPA
-### JPA and Hibernate
+### JPA
 <p>
   JPA stands for Java Persistence API. It's a specification to persist Java objects in relational Database. It cannot be used without an ORM implementation like Hibernate or EclipseLink. Hibernate is the de facto JPA     implementation standard.
 </p>
@@ -31,10 +31,12 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
     <li>
       JPA provides JPQL (Java Persistence Query Language). Hibernate's HQL is an extended version or a superset of JPQL. HQL is a query language that will be translated to plain SQL queries. It's syntax operates with objects and properties, instead of tables and columns. An example of HQL syntax: String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC"
     </li>
-    <li>For persisting mapped entities, JPA provides EntityManagerFactory interface, whereas Hibernate uses the SessionFactory.</li>
+    <li>For persisting mapped entities, JPA provides EntityManagerFactory interface, whereas Hibernate uses the SessionFactory. Note that JPA's EntityManager is only an interface, it's implemented by Hibernate.</li>
   </ul>
 </p>
 
 <p>So JPA provides some in-built stuff that is used by every kind of JPA implementations, hence if you change your ORM framework (let's say from Hibernate to EclipseLink) your code will not break. Hibernate specific functionality can be used only, if you are sure you don't want to replace it in the future.</p>
+
+### Hibernate
 
 
