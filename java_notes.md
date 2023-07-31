@@ -68,4 +68,4 @@ To-one relationships
 
 ## Common problem: N+1 select
 Lazy fetching of related entities.
-Get the authors, then iterate through them, and fetch related books one by one.
+Get the authors, then iterate through them, and fetch related books one by one. --> so every access to the book association generates a query.
