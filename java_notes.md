@@ -51,6 +51,7 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 
 <br>
 <br>
+
 ## Stuff to allocate somewhere
 FetchType recommendations:
 To-many relationships
@@ -66,6 +67,12 @@ To-one relationships
 
 <br>
 
-## Common problem: N+1 select
+### Stuff to allocate: Common problem: N+1 select
 Lazy fetching of related entities.
 Get the authors, then iterate through them, and fetch related books one by one. --> so every access to the book association generates a query.
+
+### Stuff to allocate:Persistence layer
+great stuff, for instance DTO Projections, and when to use them. https://www.youtube.com/watch?v=smyFi4OCHDE
+Writing notes, and creating own sample codes for this.
+
+
