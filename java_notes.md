@@ -63,3 +63,9 @@ To-one relationships
   <li>check existing mappings individually</li>
   <li>Use FetchType.LAZY for new ones</li>
 </ul>
+
+<br>
+
+## Common problem: N+1 select
+Lazy fetching of related entities.
+Get the authors, then iterate through them, and fetch related books one by one.
