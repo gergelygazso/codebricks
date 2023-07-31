@@ -19,7 +19,7 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 ```
 
 # Spring
-## Relationship between JPA, Hibernate and Spring Data JPA
+## JPA, Hibernate and Spring Data JPA
 ### JPA
 <p>
   JPA stands for Java Persistence API. It's a specification to persist Java objects in relational Database. It cannot be used without an ORM implementation like Hibernate or EclipseLink. Hibernate is the de facto JPA     implementation standard.
@@ -47,10 +47,58 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
   Hibernate supports writing native queries as well, but it's not recommended, because if you change the database behind your app, your query can break. But if you uses HQL instead, Hibernate will translate it to new Database syntax, after you configurated the new database dialect.
 </p>
 
-<p>https://medium.com/javarevisited/hibernate-vs-jpa-vs-spring-data-jpa-ff4485aaa780 --> Ez alapján folytatni!</p>
+### Spring Data JPA
+Spring Data is part of Spring framework.
 
-<br>
-<br>
+#### Spring Data generates DAOs
+<p>
+    Making your own DAO implementations are unneccessary, because Spring Data generates it for you.
+    We only need to define DAO implementations
+</p>
+
+//TODO: innen folytatni ebből: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
+
+### FetchType.LAZY and FetchType.EAGER
+<p>
+    EAGER loading fetches all of the associations of entity at initialization time. So every entity related data
+    will be fetched from the DB when the entity is instantiated.
+</p>
+
+```java
+@Entity
+@Table(name = "USER")
+public class Author {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
+    private Set<Book> books = new HashSet();
+
+}
+```
+<p>
+    In contrast, you can see and example of LAZY loading below. The set of books written by the author will be queried against the DB not by the initialization of the entity,
+    but when we call the getBooks() method.
+</p>
+
+```java
+@Entity
+@Table(name = "USER")
+public class Author {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private Set<Book> books = new HashSet();
+
+}
+```
+
+#
 
 ## Stuff to allocate somewhere
 FetchType recommendations:
