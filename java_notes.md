@@ -49,5 +49,17 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 
 <p>https://medium.com/javarevisited/hibernate-vs-jpa-vs-spring-data-jpa-ff4485aaa780 --> Ez alapján folytatni!</p>
 
-
-
+<br>
+<br>
+## Stuff to allocate somewhere
+FetchType recommendations:
+To-many relationships
+<ul>
+  <li>Stick to the default mapping (FetchType.LAZY)</li>
+  <li>Use eager fetching for specific queries, if required</li>
+</ul>
+To-one relationships
+<ul>
+  <li>check existing mappings individually</li>
+  <li>Use FetchType.LAZY for new ones</li>
+</ul>
