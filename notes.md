@@ -18,14 +18,14 @@
 String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 ```
 
-# Spring
+# Spring Boot
 ## JPA, Hibernate and Spring Data JPA
 ### JPA
 <p>
   JPA stands for Java Persistence API. It's a specification to persist Java objects in relational Database. It cannot be used without an ORM implementation like Hibernate or EclipseLink. Hibernate is the de facto JPA     implementation standard.
 </p>
 
-<p>
+
   java. persistence package includes the JPA classes and interfaces. It provides:
   <ul>
     <li>
@@ -33,7 +33,7 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
     </li>
     <li>For persisting mapped entities, JPA provides EntityManagerFactory interface, whereas Hibernate uses the SessionFactory. Note that JPA's EntityManager is only an interface, it's implemented by Hibernate.</li>
   </ul>
-</p>
+
 
 <p>So JPA provides some in-built stuff that is used by every kind of JPA implementations, hence if you change your ORM framework (let's say from Hibernate to EclipseLink) your code will not break. Hibernate specific functionality can be used only, if you are sure you don't want to replace it in the future.</p>
 
@@ -48,12 +48,16 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 </p>
 
 ### Spring Data JPA
-Spring Data is part of Spring framework.
+Spring Data is part of Spring framework (not Spring Boot).
 
 #### Spring Data generates DAOs
 <p>
     Making your own DAO implementations are unneccessary, because Spring Data generates it for you.
     We only need to define DAO implementations
+</p>
+
+<p>
+  <img src="images/CRUDRepositoryAndJPARepository.png" width="50%" height="auto"/>
 </p>
 
 //TODO: innen folytatni ebből: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
@@ -122,5 +126,8 @@ Get the authors, then iterate through them, and fetch related books one by one. 
 ### Stuff to allocate:Persistence layer
 great stuff, for instance DTO Projections, and when to use them. https://www.youtube.com/watch?v=smyFi4OCHDE
 Writing notes, and creating own sample codes for this.
+
+### Stuff to allocate: DTO projections
+
 
 
