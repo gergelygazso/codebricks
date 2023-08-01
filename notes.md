@@ -60,6 +60,43 @@ Spring Data is part of Spring framework (not Spring Boot).
   <img src="images/CRUDRepositoryAndJPARepository.png" width="50%" height="auto"/>
 </p>
 
+
+<p>
+    Using Spring Data JPA, we only need to create our Repository interface, extendening CRUDRepositroy
+    or JPARepository interface, depends on the use case.
+</p>
+
+<u>CrudRepository</u>
+<p>CRUDRepositroy provides generic CRUD operations on a repository. It extends the Spring Data Repository
+    interface.
+</p>
+
+Code example:
+```java
+import org.springframework.data.repository.CrudRepository;
+
+public interface TestRepository extends CrudRepository<TestEntity, Long> {
+
+}
+```
+<p>Where TestEntity is the Model/Entity, that repository manages, and Long is the type of the Enity's id.</p>
+
+<u>JpaRepository</u>
+<p>
+    JpaRepository extends CrudRepository and PagingAndSortingRepository interfaces. So it provides
+    CRUD operations and API for pagination and sorting.
+</p>
+
+Code example:
+```java
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TestRepository extends JpaRepository<TestEntity, Long> {
+}
+```
+<p>Where TestEntity and Long are the same types like by the CrudRepository above.</p>
+
+#### Custom queries and access methods
 //TODO: innen folytatni ebből: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
 
 ### FetchType.LAZY and FetchType.EAGER
