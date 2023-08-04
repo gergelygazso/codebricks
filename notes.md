@@ -19,7 +19,12 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 ```
 
 # Spring Boot
+<br>
+
 ## JPA, Hibernate and Spring Data JPA
+
+<br>
+
 ### JPA
 <p>
   JPA stands for Java Persistence API. It's a specification to persist Java objects in relational Database. It cannot be used without an ORM implementation like Hibernate or EclipseLink. Hibernate is the de facto JPA     implementation standard.
@@ -37,6 +42,8 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
 
 <p>So JPA provides some in-built stuff that is used by every kind of JPA implementations, hence if you change your ORM framework (let's say from Hibernate to EclipseLink) your code will not break. Hibernate specific functionality can be used only, if you are sure you don't want to replace it in the future.</p>
 
+<br>
+
 ### Hibernate
 <p>
   <img src="images/hibernate_architecture.jpg" width="50%" height="auto"/>
@@ -47,8 +54,12 @@ String hql = "FROM Employee E WHERE E.id > 10 ORDER BY E.salary DESC";
   Hibernate supports writing native queries as well, but it's not recommended, because if you change the database behind your app, your query can break. But if you uses HQL instead, Hibernate will translate it to new Database syntax, after you configurated the new database dialect.
 </p>
 
+<br>
+
 ### Spring Data JPA
 Spring Data is part of Spring framework (not Spring Boot).
+
+<br>
 
 #### Spring Data generates DAOs
 <p>
@@ -96,8 +107,21 @@ public interface TestRepository extends JpaRepository<TestEntity, Long> {
 ```
 <p>Where TestEntity and Long are the same types like by the CrudRepository above.</p>
 
+<br>
+
 #### Custom queries and access methods
+<p>
+    Beyond the CRUD operations, Spring Data JPA provides options to write custom queries. The query methods are
+    the following:
+</p>
+<ul>
+    <li>Derived queries from the method name</li>
+</ul>
+
+
 //TODO: innen folytatni ebből: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
+
+<br>
 
 ### FetchType.LAZY and FetchType.EAGER
 <p>
