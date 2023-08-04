@@ -64,6 +64,7 @@ CREATE TABLE job_history (
 );
 
 
+
 CREATE UNIQUE INDEX UI_job_history ON job_history(
     employee_id,
     start_date
