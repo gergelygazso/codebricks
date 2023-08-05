@@ -1,2 +1,2 @@
 # codebricks
-summarizing programming principles in practice
+programming principles in practice
