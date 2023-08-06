@@ -2608,16 +2608,3 @@ update employees set hire_date = '1997-12-16' where employee_id = 203;
 update employees set hire_date = '1991-12-23' where employee_id = 204;
 update employees set hire_date = '2000-6-3' where employee_id = 205;
 update employees set hire_date = '1989-2-21' where employee_id = 206;
-
---update job_history set start_date = '1992-4-5', end_date = '1993-10-15' where employee_id = 102 and start_date = '1992-4-5';
---update job_history set start_date = '1989-4-21', end_date = '1990-4-14' where employee_id = 101 and start_date = '1989-4-21';
---update job_history set start_date = '1990-10-19', end_date = '1994-1-31' where employee_id = 101 and start_date = '1990-10-19';
---update job_history set start_date = '1987-2-19', end_date = '1990-4-28' where employee_id = 201 and start_date = '1987-2-19';
---update job_history set start_date = '1995-5-5', end_date = '1998-3-25' where employee_id = 114 and start_date = '1995-5-5';
---update job_history set start_date = '1989-9-22', end_date = '1992-5-14' where employee_id = 122 and start_date = '1989-9-22';
---update job_history set start_date = '2000-9-23', end_date = '2000-12-31' where employee_id = 200 and start_date = '2000-9-23';
---update job_history set start_date = '1993-1-1', end_date = '1995-10-13' where employee_id = 176 and start_date = '1993-1-1';
---update job_history set start_date = '1997-9-15', end_date = '2001-11-3' where employee_id = 176 and start_date = '1997-9-15';
---update job_history set start_date = '2000-11-23', end_date = '2000-12-15' where employee_id = 200 and start_date = '2000-11-23';
-
-
